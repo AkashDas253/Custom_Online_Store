@@ -37,10 +37,10 @@ Welcome to the Custom Online Shop project! This Django-based web application all
 
 3. **Mode to project directory**
     
-    '''bash
+    ```bash
     cd CustomOnlineStore
-    '''
-    
+    ```
+
 4. **Apply database migrations:**
 
     ```bash
