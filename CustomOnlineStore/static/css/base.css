@@ -6,21 +6,7 @@ body {
     font-family:helvetica, sans-serif;
 }
 
-/* Footer Styles */
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #f8f9fa; /* Change to your desired color */
-    padding: 10px 20px;
-    text-align: center;
-    z-index: 9999;
-  }
-
-  footer a {
-    color: #007bff; /* Change to your desired color */
-    text-decoration: none;
-  }
+    
 
 h1, h2, h3, h4, h5 , h6 {
     font-family: 'Ubuntu', sans-serif; font-weight:normal;
