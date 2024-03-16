@@ -27,7 +27,6 @@ Welcome to the Custom Online Shop project! This Django-based web application all
     ```bash
     git clone https://github.com/AkashDas253/Custom_Online_Store.git
     cd Custom_Online_Store
-    cd CustomOnlineStore
     ```
 
 2. **Install dependencies:**
@@ -36,25 +35,31 @@ Welcome to the Custom Online Shop project! This Django-based web application all
     pip install -r requirements.txt
     ```
 
-3. **Apply database migrations:**
+3. **Mode to project directory**
+    
+    '''bash
+    cd CustomOnlineStore
+    '''
+    
+4. **Apply database migrations:**
 
     ```bash
     python manage.py migrate
     ```
 
-4. **Create a superuser (admin) account:**
+5. **Create a superuser (admin) account:**
 
     ```bash
     python manage.py createsuperuser
     ```
 
-5. **Run the development server:**
+6. **Run the development server:**
 
     ```bash
     python manage.py runserver
     ```
 
-6. **Access the application at** [http://localhost:8000](http://localhost:8000) **in your web browser.**
+7. **Access the application at** [http://localhost:8000](http://localhost:8000) **in your web browser.**
 
 ## Contributing
 
