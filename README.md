@@ -25,8 +25,9 @@ Welcome to the Custom Online Shop project! This Django-based web application all
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/yourusername/custom-online-shop.git
-    cd custom-online-shop
+    git clone https://github.com/AkashDas253/Custom_Online_Store.git
+    cd Custom_Online_Store
+    cd CustomOnlineStore
     ```
 
 2. **Install dependencies:**
