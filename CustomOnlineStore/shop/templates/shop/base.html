@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Enter the Stores' Name -->
+    <title>{% block title %}Your Shop Name Here{% endblock %}</title>
+    <link href="{% static "css/base.css" %}" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header">
+
+      <!-- Enter the Stores' Name -->
+      <a href="/" class="logo">My Shop</a>
+    </div>
+    <div id="subheader">
+      <div class="cart">
+        {% with total_items=cart|length %}
+          {% if total_items > 0 %}
+            Your cart:
+            <a href="{% url "cart:cart_detail" %}">
+              {{ total_items }} item{{ total_items|pluralize }},
+              ${{ cart.get_total_price }}
+            </a>
+          {% elif not order %}
+            Your cart is empty.
+          {% endif %}
+        {% endwith %}
+      </div>
+    </div>
+    <div id="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+
+  <style>
+     footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #f8f9fa; /* Change to your desired color */
+      padding: 10px 20px;
+      text-align: center;
+      z-index: 9999;
+    }
+    footer a {
+      color: #007bff; /* Change to your desired color */
+      text-decoration: none;
+    }
+    body {
+      margin-bottom: 60px; /* Adjust this value according to the height of your footer */
+    }
+  </style>
+  <!-- Footer Section -->
+  <footer>
+
+    <!-- Contact Details Go here -->
+    <a href="tel:+15551234567">Phone: +1-555-123-4567</a>
+    &nbsp; | &nbsp;
+    <a href="mailto:info@example.com">Email: info@example.com</a>
+    &nbsp; | &nbsp;
+    <a href="{% url "shop:aboutus" %}">About Us</a>
+  </footer>
+
+  </body>
+</html>
